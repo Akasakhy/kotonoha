@@ -43,10 +43,7 @@ export default function Header() {
             </span>
             {/* ロゴ本体 */}
             <div className="flex items-center gap-2">
-              <FountainPenIcon
-                className="w-5 h-5"
-                style={{ color: "var(--color-text)" } as React.CSSProperties}
-              />
+              <FountainPenIcon className="w-5 h-5 text-[var(--color-text)]" />
               <a
                 href="#"
                 style={{

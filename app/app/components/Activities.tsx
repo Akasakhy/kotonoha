@@ -221,9 +221,7 @@ export default function Activities() {
                 }}
               >
                 {activity.useSvg ? (
-                  <BookPenIllustration
-                    style={{ width: "100%", height: "100%" } as React.CSSProperties}
-                  />
+                  <BookPenIllustration className="w-full h-full" />
                 ) : activity.image ? (
                   <img
                     src={activity.image}

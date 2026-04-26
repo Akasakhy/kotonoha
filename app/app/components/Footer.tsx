@@ -77,10 +77,7 @@ export default function Footer() {
             {/* ロゴ */}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.3rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                <FountainPenIcon
-                  className="w-4 h-4"
-                  style={{ color: "var(--color-text)" } as React.CSSProperties}
-                />
+                <FountainPenIcon className="w-4 h-4 text-[var(--color-text)]" />
                 <span
                   style={{
                     fontFamily: "var(--font-serif)",

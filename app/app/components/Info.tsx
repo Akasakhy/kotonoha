@@ -120,10 +120,7 @@ export default function Info() {
                 gap: "0.5rem",
               }}
             >
-              <ClipIcon
-                className="w-7 h-7"
-                style={{ color: "var(--color-text-muted)" } as React.CSSProperties}
-              />
+              <ClipIcon className="w-7 h-7 text-[var(--color-text-muted)]" />
             </div>
 
             {/* 見出し */}
@@ -153,10 +150,7 @@ export default function Info() {
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               {/* 曜日 */}
               <div style={{ display: "flex", alignItems: "center", gap: "0.85rem" }}>
-                <CalendarIcon
-                  className="w-5 h-5 flex-shrink-0"
-                  style={{ color: "var(--color-text-muted)" } as React.CSSProperties}
-                />
+                <CalendarIcon className="w-5 h-5 flex-shrink-0 text-[var(--color-text-muted)]" />
                 <span
                   style={{
                     fontFamily: "var(--font-serif)",
@@ -171,10 +165,7 @@ export default function Info() {
 
               {/* 時間 */}
               <div style={{ display: "flex", alignItems: "center", gap: "0.85rem" }}>
-                <ClockIcon
-                  className="w-5 h-5 flex-shrink-0"
-                  style={{ color: "var(--color-text-muted)" } as React.CSSProperties}
-                />
+                <ClockIcon className="w-5 h-5 flex-shrink-0 text-[var(--color-text-muted)]" />
                 <span
                   style={{
                     fontFamily: "var(--font-serif)",
@@ -189,10 +180,7 @@ export default function Info() {
 
               {/* 場所 */}
               <div style={{ display: "flex", alignItems: "center", gap: "0.85rem" }}>
-                <PinIcon
-                  className="w-5 h-5 flex-shrink-0"
-                  style={{ color: "var(--color-text-muted)" } as React.CSSProperties}
-                />
+                <PinIcon className="w-5 h-5 flex-shrink-0 text-[var(--color-text-muted)]" />
                 <span
                   style={{
                     fontFamily: "var(--font-serif)",

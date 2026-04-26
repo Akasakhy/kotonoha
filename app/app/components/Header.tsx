@@ -57,6 +57,7 @@ export default function Header() {
                   color: "var(--color-text)",
                   textDecoration: "none",
                   lineHeight: 1,
+                  whiteSpace: "nowrap",
                 }}
               >
                 ことのは
@@ -109,8 +110,8 @@ export default function Header() {
           {/* CTAボタン + ハンバーガー */}
           <div className="flex items-center gap-3">
             <a href="mailto:kotonoha@example.com" className="btn-pill hidden sm:inline-flex">
-              <MailIcon className="w-4 h-4" />
-              <span>お問い合わせ</span>
+              <MailIcon className="w-4 h-4 flex-shrink-0" />
+              <span className="whitespace-nowrap">お問い合わせ</span>
             </a>
 
             {/* ハンバーガーボタン（モバイル） */}
@@ -181,9 +182,9 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
-            <a href="mailto:kotonoha@example.com" className="btn-pill w-fit">
-              <MailIcon className="w-4 h-4" />
-              <span>お問い合わせ</span>
+            <a href="mailto:kotonoha@example.com" className="btn-pill w-fit flex items-center gap-2">
+              <MailIcon className="w-4 h-4 flex-shrink-0" />
+              <span className="whitespace-nowrap">お問い合わせ</span>
             </a>
           </div>
         </div>

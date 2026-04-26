@@ -84,18 +84,16 @@ export default function Hero() {
 
       {/* メインコンテンツ */}
       <div
-        className="section-wrapper relative"
+        className="section-wrapper relative grid grid-cols-1 md:grid-cols-2"
         style={{
           zIndex: 1,
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
           gap: "clamp(1rem, 3vw, 3rem)",
           alignItems: "center",
           minHeight: "calc(100svh - 180px)",
         }}
       >
         {/* 左側: テキスト */}
-        <div ref={textRef} style={{ display: "flex", flexDirection: "column", gap: "1.8rem" }}>
+        <div ref={textRef} className="flex flex-col items-center md:items-start text-center md:text-left" style={{ gap: "1.8rem" }}>
           <h1 className="hero-item" style={{ margin: 0 }}>
             <span
               style={{
@@ -133,13 +131,13 @@ export default function Hero() {
               letterSpacing: "0.1em",
             }}
           >
-            ことのはは、言葉を通して、<br />
-            自分、そして他者と向き合うきっかけをつくる団体です。<br />
-            誰かの言葉ではなく、<br />
+            ことのはは、言葉を通して、<br className="hidden md:inline" />
+            自分、そして他者と向き合うきっかけをつくる団体です。<br className="hidden md:inline" />
+            誰かの言葉ではなく、<br className="hidden md:inline" />
             あなたの「自分の言葉」と出会えることを願っています。
           </p>
 
-          <div className="hero-item flex items-center gap-4 flex-wrap">
+          <div className="hero-item flex items-center justify-center md:justify-start gap-4 flex-wrap">
             <a
               href="#about"
               style={{

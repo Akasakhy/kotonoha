@@ -155,9 +155,9 @@ export default function About() {
                 color: "var(--color-text)",
               }}
             >
-              言葉を通して、<br />
-              自分、そして<br />
-              他者と向き合う<br />
+              言葉を通して、<br className="hidden md:inline" />
+              自分、そして<br className="hidden md:inline" />
+              他者と向き合う<br className="hidden md:inline" />
               きっかけを作る。
             </h2>
           </div>
@@ -174,8 +174,8 @@ export default function About() {
                 letterSpacing: "0.08em",
               }}
             >
-              私たちは、日々たくさんの言葉に触れています。<br />
-              SNSの投稿、誰かの意見、社会の価値観。<br />
+              私たちは、日々たくさんの言葉に触れています。<br className="hidden md:inline" />
+              SNSの投稿、誰かの意見、社会の価値観。<br className="hidden md:inline" />
               気づかないうちに、他者の言葉に影響を受けているかもしれません。
             </p>
 
@@ -189,8 +189,8 @@ export default function About() {
                 letterSpacing: "0.08em",
               }}
             >
-              ことのはは、言葉を丁寧に扱う時間や場をつくることで、<br />
-              自分自身の内側にある想いや問いに気づき、<br />
+              ことのはは、言葉を丁寧に扱う時間や場をつくることで、<br className="hidden md:inline" />
+              自分自身の内側にある想いや問いに気づき、<br className="hidden md:inline" />
               他者との対話を通して、新たな視点や気づきを得ることを大切にしています。
             </p>
 
@@ -205,7 +205,7 @@ export default function About() {
                 fontWeight: 400,
               }}
             >
-              その先にあるのは、他者からの影響を受けた言葉ではなく、<br />
+              その先にあるのは、他者からの影響を受けた言葉ではなく、<br className="hidden md:inline" />
               あなただけの「自分の言葉」です。
             </p>
 

@@ -230,22 +230,23 @@ export default function Info() {
         {/* 右側: テキストのみ */}
         <div
           ref={rightRef}
-          style={{ display: "flex", flexDirection: "column", gap: "1.8rem" }}
+          className="flex flex-col items-center md:items-start text-center md:text-left"
+          style={{ gap: "1.8rem" }}
         >
           {/* 本文テキスト */}
           <p
+            className="md:pl-16 lg:pl-32"
             style={{
               margin: 0,
               fontSize: "clamp(0.83rem, 1.1vw, 0.93rem)",
               color: "var(--color-text-light)",
               lineHeight: 2.4,
               letterSpacing: "0.08em",
-              paddingLeft: "8rem"
             }}
           >
-            私たちは、毎週火曜日に定例会を行っています。<br />
-            活動の企画を考えたり、言葉について語り合ったり、<br />
-            それぞれの「ことのは」を持ち寄る時間です。<br />
+            私たちは、毎週火曜日に定例会を行っています。<br className="hidden md:inline" />
+            活動の企画を考えたり、言葉について語り合ったり、<br className="hidden md:inline" />
+            それぞれの「ことのは」を持ち寄る時間です。<br className="hidden md:inline" />
             見学だけでも大歓迎です。気軽にお越しください。
           </p>
         </div>

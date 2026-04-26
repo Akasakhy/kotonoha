@@ -93,12 +93,12 @@ export default function Header() {
                   whiteSpace: "nowrap",
                 }}
                 onMouseEnter={(e) =>
-                  ((e.currentTarget as HTMLAnchorElement).style.color =
-                    "var(--color-text-light)")
+                ((e.currentTarget as HTMLAnchorElement).style.color =
+                  "var(--color-text-light)")
                 }
                 onMouseLeave={(e) =>
-                  ((e.currentTarget as HTMLAnchorElement).style.color =
-                    "var(--color-text)")
+                ((e.currentTarget as HTMLAnchorElement).style.color =
+                  "var(--color-text)")
                 }
               >
                 {link.label}

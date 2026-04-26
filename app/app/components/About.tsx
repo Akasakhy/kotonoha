@@ -91,8 +91,8 @@ export default function About() {
           aria-hidden="true"
           className="absolute"
           style={{
-            top: "8%",
-            right: "3%",
+            top: "60%",
+            right: "2%",
             width: "clamp(60px, 8vw, 110px)",
             opacity: 0.5,
           }}
@@ -100,7 +100,8 @@ export default function About() {
       </div>
 
       {/* レスポンシブ: モバイルは縦積み */}
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .about-grid {
           display: grid;
           grid-template-columns: 2fr 3fr;
@@ -215,9 +216,9 @@ export default function About() {
               aria-hidden="true"
               className="absolute"
               style={{
-                right: "-30px",
-                top: "-20px",
-                width: "clamp(80px, 10vw, 130px)",
+                right: "-357px",
+                top: "-90px",
+                width: "clamp(180px, 40vw, 310px)",
                 opacity: 0.6,
                 pointerEvents: "none",
                 zIndex: 2,

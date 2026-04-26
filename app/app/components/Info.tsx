@@ -58,28 +58,24 @@ export default function Info() {
       id="info"
       ref={sectionRef}
       style={{
-        backgroundColor: "var(--color-base-section)",
+        backgroundImage: "url('/sozai/background_section3.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center right",
+        backgroundRepeat: "no-repeat",
         paddingTop: "clamp(4rem, 10vh, 8rem)",
         paddingBottom: "clamp(4rem, 10vh, 8rem)",
         position: "relative",
         overflow: "hidden",
       }}
     >
-      {/* 背景装飾 */}
-      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-        <img
-          src="/sozai/cell_03_r1c3.png"
-          alt=""
-          aria-hidden="true"
-          className="absolute"
-          style={{
-            top: "-5%",
-            right: "-10%",
-            width: "clamp(250px, 30vw, 420px)",
-            opacity: 0.06,
-            transform: "rotate(180deg)",
-          }}
-        />
+      {/* 背景オーバーレイ（文字の可読性確保） */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ backgroundColor: "rgba(245, 242, 236, 0.72)", zIndex: 0 }}
+      />
+
+      {/* 既存の背景装飾 */}
+      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 1 }}>
         <img
           src="/sozai/cell_01_r1c1.png"
           alt=""
@@ -98,7 +94,7 @@ export default function Info() {
         className="section-wrapper"
         style={{
           position: "relative",
-          zIndex: 1,
+          zIndex: 2,
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "clamp(2rem, 5vw, 5rem)",
@@ -231,32 +227,11 @@ export default function Info() {
           </div>
         </div>
 
-        {/* 右側: 画像 + テキスト */}
+        {/* 右側: テキストのみ */}
         <div
           ref={rightRef}
           style={{ display: "flex", flexDirection: "column", gap: "1.8rem" }}
         >
-          {/* 窓辺の画像 */}
-          <div
-            style={{
-              borderRadius: "6px",
-              overflow: "hidden",
-              position: "relative",
-            }}
-          >
-            <img
-              src="/sozai/background_section3.png"
-              alt="窓辺・花瓶・コーヒーカップの水彩イラスト"
-              style={{
-                width: "100%",
-                height: "auto",
-                display: "block",
-                objectFit: "cover",
-                maxHeight: "280px",
-              }}
-            />
-          </div>
-
           {/* 本文テキスト */}
           <p
             style={{
@@ -265,6 +240,7 @@ export default function Info() {
               color: "var(--color-text-light)",
               lineHeight: 2.4,
               letterSpacing: "0.08em",
+              paddingLeft: "8rem"
             }}
           >
             私たちは、毎週火曜日に定例会を行っています。<br />

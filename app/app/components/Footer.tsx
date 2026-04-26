@@ -172,7 +172,7 @@ export default function Footer() {
                 letterSpacing: "0.1em",
               }}
             >
-              @kotonoha_2025
+              @kotonoha
             </p>
           </div>
 
@@ -202,9 +202,9 @@ export default function Footer() {
                     ((e.currentTarget as HTMLAnchorElement).style.color = "var(--color-text)")
                   }
                   onMouseLeave={(e) =>
-                    ((e.currentTarget as HTMLAnchorElement).style.color = link.highlight
-                      ? "var(--color-accent-navy)"
-                      : "var(--color-text-muted)")
+                  ((e.currentTarget as HTMLAnchorElement).style.color = link.highlight
+                    ? "var(--color-accent-navy)"
+                    : "var(--color-text-muted)")
                   }
                 >
                   {link.label}
@@ -229,7 +229,7 @@ export default function Footer() {
               letterSpacing: "0.1em",
             }}
           >
-            © 2025 ことのは
+            © 2026 ことのは
           </p>
         </div>
       </div>

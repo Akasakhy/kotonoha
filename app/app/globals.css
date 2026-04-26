@@ -1,0 +1,213 @@
+@import "tailwindcss";
+
+/* ===========================
+   デザインシステム: カスタムCSS変数
+   =========================== */
+:root {
+  /* ベースカラー */
+  --color-base: #FCFDF9;
+  --color-base-warm: #F8F5EF;
+  --color-base-section: #F5F2EC;
+
+  /* テキストカラー */
+  --color-text: #2C3E50;
+  --color-text-light: #5A6B7A;
+  --color-text-muted: #8A9BAA;
+
+  /* アクセントカラー */
+  --color-accent-blue: #C8DCE8;
+  --color-accent-blue-dark: #A8C4D6;
+  --color-accent-beige: #E8DFD0;
+  --color-accent-beige-dark: #D4C9B5;
+  --color-accent-navy: #2C3E50;
+
+  /* フォント */
+  --font-serif: var(--font-noto-serif-jp), "Noto Serif JP", "Yu Mincho", "游明朝", serif;
+
+  /* スペーシング・レイアウト */
+  --section-padding-y: 6rem;
+  --section-padding-x: 2rem;
+  --max-width: 1200px;
+}
+
+/* ===========================
+   グローバルスタイル
+   =========================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  font-feature-settings: "palt" 1; /* プロポーショナルメトリクス */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 2.0;
+  letter-spacing: 0.05em;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   タイポグラフィ
+   =========================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  letter-spacing: 0.08em;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+p {
+  line-height: 2.2;
+  letter-spacing: 0.06em;
+}
+
+/* ===========================
+   ユーティリティクラス
+   =========================== */
+
+/* セクション共通ラッパー */
+.section-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--section-padding-x);
+}
+
+/* 水彩テクスチャ: 薄い波のグラデーション */
+.watercolor-bg {
+  background: radial-gradient(ellipse at 20% 50%, rgba(200, 220, 232, 0.12) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 20%, rgba(232, 223, 208, 0.10) 0%, transparent 55%),
+              radial-gradient(ellipse at 60% 80%, rgba(200, 220, 232, 0.08) 0%, transparent 50%),
+              var(--color-base);
+}
+
+/* カスタムアンダーライン（細い線） */
+.custom-underline {
+  position: relative;
+}
+.custom-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 2rem;
+  height: 1px;
+  background-color: var(--color-accent-navy);
+  opacity: 0.5;
+}
+
+/* セクション区切り装飾（有機的な波線） */
+.section-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+/* コーヒーシミの装飾（疑似要素） */
+.coffee-stain::after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid rgba(180, 140, 100, 0.15);
+  box-shadow: 
+    0 0 0 6px rgba(180, 140, 100, 0.05),
+    inset 0 0 20px rgba(180, 140, 100, 0.03);
+  right: -15px;
+  top: -20px;
+  pointer-events: none;
+}
+
+/* メモ帳スタイル */
+.memo-frame {
+  background: #FEFAF3;
+  border: 1px solid rgba(180, 160, 120, 0.25);
+  border-radius: 4px;
+  box-shadow: 
+    2px 4px 12px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+/* ピルシェイプボタン */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.4rem;
+  border-radius: 50px;
+  background-color: var(--color-accent-navy);
+  color: white;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-pill:hover {
+  background-color: #3d5370;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.25);
+}
+
+/* テキストリンク（矢印付き） */
+.text-link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(44, 62, 80, 0.3);
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.text-link-arrow:hover {
+  color: var(--color-accent-blue-dark);
+  border-bottom-color: var(--color-accent-blue-dark);
+  gap: 0.75rem;
+}
+
+/* フェードイン初期状態（GSAP用） */
+.gsap-fade {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* ===========================
+   スクロールバーのスタイル
+   =========================== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-base);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent-beige-dark);
+  border-radius: 3px;
+}
+
+/* ===========================
+   レスポンシブ: ブレークポイント変数
+   =========================== */
+@media (max-width: 768px) {
+  :root {
+    --section-padding-y: 4rem;
+    --section-padding-x: 1.25rem;
+  }
+  
+  body {
+    letter-spacing: 0.03em;
+  }
+}

@@ -17,7 +17,7 @@ export default function Footer() {
       {/* 背景装飾 */}
       <div className="absolute inset-0 pointer-events-none">
         <img
-          src="/sozai/cell_10_r2c4.png"
+          src="/kotonoha/sozai/cell_10_r2c4.png"
           alt=""
           aria-hidden="true"
           className="absolute"
@@ -29,7 +29,7 @@ export default function Footer() {
           }}
         />
         <img
-          src="/sozai/cell_06_r1c6.png"
+          src="/kotonoha/sozai/cell_06_r1c6.png"
           alt=""
           aria-hidden="true"
           className="absolute"
@@ -92,7 +92,7 @@ export default function Footer() {
               </div>
               {/* ロゴ下の装飾線 */}
               <img
-                src="/sozai/cell_06_r1c6.png"
+                src="/kotonoha/sozai/cell_06_r1c6.png"
                 alt=""
                 aria-hidden="true"
                 style={{ width: "80px", opacity: 0.5 }}

@@ -13,7 +13,7 @@ const activities = [
     id: "radio",
     title: "学内ラジオ放送",
     description: "言葉を届け、つながる場。学生の声をラジオから発信します。",
-    image: "/sozai/cell_17_r3c5.png",
+    image: "/kotonoha/sozai/cell_17_r3c5.png",
     imageAlt: "ラジオのイラスト",
     useSvg: false,
   },
@@ -29,7 +29,7 @@ const activities = [
     id: "career",
     title: "進路相談会",
     description: "先輩との対話を通して、自分らしい進路を一緒に考えます。",
-    image: "/sozai/cell_22_r4c4.png",
+    image: "/kotonoha/sozai/cell_22_r4c4.png",
     imageAlt: "進路相談のイラスト",
     useSvg: false,
   },
@@ -37,7 +37,7 @@ const activities = [
     id: "workshop",
     title: "ワークショップ",
     description: "テーマに沿って語り合い、新しい気づきを生み出します。",
-    image: "/sozai/cell_21_r4c3.png",
+    image: "/kotonoha/sozai/cell_21_r4c3.png",
     imageAlt: "グループワークのイラスト",
     useSvg: false,
   },
@@ -45,7 +45,7 @@ const activities = [
     id: "others",
     title: "その他の活動",
     description: "イベント出展やコラボ企画など、言葉を広げる場をつくります。",
-    image: "/sozai/cell_23_r4c5.png",
+    image: "/kotonoha/sozai/cell_23_r4c5.png",
     imageAlt: "ガーランドのイラスト",
     useSvg: false,
   },
@@ -115,7 +115,7 @@ export default function Activities() {
       {/* 背景装飾 */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         <img
-          src="/sozai/cell_08_r2c2.png"
+          src="/kotonoha/sozai/cell_08_r2c2.png"
           alt=""
           aria-hidden="true"
           className="absolute"
@@ -127,7 +127,7 @@ export default function Activities() {
           }}
         />
         <img
-          src="/sozai/cell_01_r1c1.png"
+          src="/kotonoha/sozai/cell_01_r1c1.png"
           alt=""
           aria-hidden="true"
           className="absolute"

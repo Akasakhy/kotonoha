@@ -58,7 +58,7 @@ export default function Info() {
       id="info"
       ref={sectionRef}
       style={{
-        backgroundImage: "url('/sozai/background_section3.png')",
+        backgroundImage: "url('/kotonoha/sozai/background_section3.png')",
         backgroundSize: "cover",
         backgroundPosition: "center right",
         backgroundRepeat: "no-repeat",
@@ -77,7 +77,7 @@ export default function Info() {
       {/* 既存の背景装飾 */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 1 }}>
         <img
-          src="/sozai/cell_01_r1c1.png"
+          src="/kotonoha/sozai/cell_01_r1c1.png"
           alt=""
           aria-hidden="true"
           className="absolute"

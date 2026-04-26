@@ -72,7 +72,7 @@ export default function About() {
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         {/* 波線装飾（左下） */}
         <img
-          src="/sozai/cell_01_r1c1.png"
+          src="/kotonoha/sozai/cell_01_r1c1.png"
           alt=""
           aria-hidden="true"
           className="absolute"
@@ -86,7 +86,7 @@ export default function About() {
         />
         {/* 右上の小さいフラワー */}
         <img
-          src="/sozai/cell_10_r2c4.png"
+          src="/kotonoha/sozai/cell_10_r2c4.png"
           alt=""
           aria-hidden="true"
           className="absolute"
@@ -211,7 +211,7 @@ export default function About() {
 
             {/* コーヒーカップの跡（装飾） */}
             <img
-              src="/sozai/cell_05_r1c5.png"
+              src="/kotonoha/sozai/cell_05_r1c5.png"
               alt=""
               aria-hidden="true"
               className="absolute"

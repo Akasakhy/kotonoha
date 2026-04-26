@@ -61,7 +61,7 @@ export default function Header() {
               </a>
               {/* 手書き風アンダーライン装飾 */}
               <img
-                src="/sozai/cell_06_r1c6.png"
+                src="/kotonoha/sozai/cell_06_r1c6.png"
                 alt=""
                 aria-hidden="true"
                 style={{

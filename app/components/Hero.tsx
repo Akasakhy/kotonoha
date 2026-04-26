@@ -56,7 +56,7 @@ export default function Hero() {
       {/* 背景装飾: 水彩の滲み */}
       <div ref={bgRef} className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         <img
-          src="/sozai/cell_03_r1c3.png"
+          src="/kotonoha/sozai/cell_03_r1c3.png"
           alt=""
           aria-hidden="true"
           className="absolute"
@@ -69,7 +69,7 @@ export default function Hero() {
           }}
         />
         <img
-          src="/sozai/cell_01_r1c1.png"
+          src="/kotonoha/sozai/cell_01_r1c1.png"
           alt=""
           aria-hidden="true"
           className="absolute"
@@ -180,7 +180,7 @@ export default function Hero() {
           style={{ width: "100%" }}
         >
           <img
-            src="/sozai/hero_notebook_2.png"
+            src="/kotonoha/sozai/hero_notebook_2.png"
             alt="ノートと万年筆とドライフラワーのイラスト"
             style={{
               width: "200%",
@@ -197,7 +197,7 @@ export default function Hero() {
       {/* レスポンシブ: モバイル */}
       <div className="md:hidden relative section-wrapper mt-8">
         <img
-          src="/sozai/hero_notebook_2.png"
+          src="/kotonoha/sozai/hero_notebook_2.png"
           alt="ノートと万年筆とドライフラワーのイラスト"
           style={{
             width: "110%",
